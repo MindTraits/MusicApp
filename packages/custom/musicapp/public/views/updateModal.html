@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Update Profile</h3>
+</div>
+<div class="modal-body" id="modal-body">
+	<div>
+		<form ng-submit="profUpdate.updateProfile()">
+		  <div class="form-group">
+		    <label for="name">Name</label>
+		    <input type="text" class="form-control" id="name" placeholder="Name" ng-model="profUpdate.profile.name">
+		  </div>
+		  <div class="form-group">
+		    <label for="age">Age</label>
+		    <input type="int" class="form-control" id="age" placeholder="Age" ng-model="profUpdate.profile.age">
+		  </div>
+		  <div class="form-group">
+		    <label for="country">Country</label>
+		    <input type="country" class="form-control" id="country" placeholder="Country" ng-model="profUpdate.profile.country">
+		  </div>
+		  <div class="form-group">
+		    <label for="city">City</label>
+		    <input type="city" class="form-control" id="city" placeholder="City" ng-model="profUpdate.profile.city">
+		  </div>
+		 
+		  <button type="submit" class="btn btn-default">Submit</button>
+		  <button  class="btn btn-default" ng-click="profUpdate.cancel()">Cancel</button>
+		</form>
+	</div>
+</div>
+
+ 
